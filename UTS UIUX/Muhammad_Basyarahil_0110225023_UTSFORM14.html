@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Rekreasi Kuliner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .form-box {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border: 3px solid black;
+        }
+        
+        h2 {
+            margin: 0 0 20px 0;
+            font-size: 18px;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+        
+        .row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        
+        label {
+            width: 200px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        
+        input, select, textarea {
+            padding: 8px;
+            border: 2px solid black;
+            font-size: 14px;
+        }
+        
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 300px;
+        }
+        
+        .wide {
+            width: 700px;
+        }
+        
+        textarea {
+            width: 700px;
+            height: 80px;
+            resize: vertical;
+        }
+        
+        select {
+            width: 180px;
+        }
+        
+        .buttons {
+            margin-left: 220px;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 25px;
+            border: 2px solid black;
+            background: white;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        
+        button:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Form Registrasi Rekreasi Kuliner</h2>
+        
+        <div class="row">
+            <label>Nama Tempat Wisata</label>
+            <input type="text" class="wide">
+        </div>
+        
+        <div class="row">
+            <label>Jenis Wisata</label>
+            <select>
+                <option>Kedai Kopi</option>
+                <option>Restoran</option>
+                <option>Cafe</option>
+                <option>Warung Makan</option>
+            </select>
+        </div>
+        
+        <div class="row">
+            <label>Deskripsi Wisata</label>
+            <textarea></textarea>
+        </div>
+        
+        <div class="row">
+            <label>Kontak Person :</label>
+            <input type="text">
+        </div>
+        
+        <div class="row">
+            <label>No HP/Telpon :</label>
+            <input type="tel">
+        </div>
+        
+        <div class="row">
+            <label>Email :</label>
+            <input type="email">
+        </div>
+        
+        <div class="row">
+            <label>Alamat Web :</label>
+            <input type="text" value="http://" class="wide">
+        </div>
+        
+        <div class="row">
+            <label>Alamat Lengkap :</label>
+            <input type="text" class="wide">
+        </div>
+        
+        <div class="row">
+            <label>Latitude,Longitude :</label>
+            <input type="text">
+        </div>
+        
+        <div class="buttons">
+            <button type="submit">Daftar</button>
+            <button type="button">Batal</button>
+        </div>
+    </div>
+</body>
+</html>
